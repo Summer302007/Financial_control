@@ -1,0 +1,33 @@
+{
+  "users": [
+    {
+      "id": "f004",
+      "fullName": "Duana",
+      "email": "duanao@gmail.com",
+      "Password": "1043444833*"
+    },
+    {
+      "id": "c87d",
+      "fullName": "Carlos Ortiz",
+      "email": "carlos@gmail.com",
+      "Password": "4985739040*"
+    },
+    {
+      "id": "7afe",
+      "fullName": "Diego Alfonso Quintero ",
+      "email": "dq53377123@gmail.com",
+      "Password": "3336455849*"
+    }
+  ],
+  
+  "events": [
+    {
+      "id": "e002",
+      "description":"Descripción del evento de ejemplo",
+      "mount": 1000,
+      "type": "Ingreso",
+      "category": "Salario",
+      "date": "2023-10-02"
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial APP</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <header>
+        <!-- This is the header of the financial application dashboard -->
+        <h1>Financial Application</h1>
+        <nav>
+            <h3>
+                <a href="#">Balance</a>
+                <a href="#">Categorias</a>
+                <a href="#">Reportes</a>
+                <a href="#" id="out">Salir</a>
+        </nav>
+    </header>
+    <main>
+        <!-- This is the main content of the financial application dashboard -->
+        <section class="main-content">
+            <!-- This section displays the user's information and financial data -->
+            <div class=" balance" id="amount">
+                <h2>Balance</h2>
+                <p id="earnings">Ganancias</p>
+                <p id="expenses">Gastos</p>
+                <p id="total">Total</p>
+            </div>
+             
+            <!-- This section contains filters for the user's financial data and the user acn choose where part see-->
+            <div class="filter">
+                <h2>Filtros</h2>
+                <button id="filterButton"></button>
+                <form id="filterForm">
+                    <label for="types" id="filterType">Tipo:</label>
+                    <select id="types" name="types">
+                        <option value="all">Todos</option>
+                        <option value="options1">Gasto</option>
+                        <option value="options2">Ganancia</option>
+                    </select>
+                    <label for="categories" id="Categories">Categorias:</label>
+                    <select id="categories" name="categories">
+                        <option value="all">Todas</option>
+                    </select>
+                    <label for="date">Desde:</label>
+                    <input type="date" id="date" name="date">
+                    <label for="order">Ordenar por:</label>
+                    <select id="order" name="order">
+                        <option value="lastDate">Mas reciente</option>
+                        <option value="firstDate">Menos reciente</option>
+                        <option value="fistLetter">A-Z</option>
+                        <option value="LastLetter">Z-A</option>
+                    </select>
+                </form>
+            </div>
+        </section>
+
+        <!-- This section displays the user's operations -->
+        <aside class="operations">
+            <h2>Operaciones</h2>
+                <ul id="list"></ul>
+                <!-- This is where the operations will be displayed -->
+            <form action="">
+                <label for="description">Descripcion:</label>
+                <textarea id="description" name="description" placeholder="Descripcion de la operacion"required></textarea>                
+                <label for="mountP">Monto:</label>
+                <input type="number" id="mountP" name="amount" placeholder="Monto de la operacion" required>
+                <label for="type">Tipo:</label>
+                <select id="type" name="type">
+                    <option value="expense">Gasto</option>
+                    <option value="income">Ganancia</option>
+                </select>                
+                <label for="category">Categoria:</label>
+                <input id="category" name="category"required>
+                <label for="date">Fecha:</label>
+                <input type="date" id="date" name="date" required>
+
+                <button type="reset">cancelar</button>
+                <button type="submit">agregar</button>
+            </form>
+
+    </main>
+    <script type="module" src="./home.js"></script>
+    
+</body>
+</html>
