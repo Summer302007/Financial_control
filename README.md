@@ -1,6 +1,6 @@
 # Financial_control
-This is an application taht help the users with their financial situacion, it shows the earn money and the expense.
-It uses a **local fake REST API** powered by `json-server` and performs **CRUD operations** using `Fetch API`.
+This is an application that help the users with their financial situacion, it shows the earn money and the expense.
+It uses a **local fake REST API** powered by `json-server` and performs **CRUD operations** using `Fetch API`. It has a login page and it a **MPA**.
 
 ---
 
